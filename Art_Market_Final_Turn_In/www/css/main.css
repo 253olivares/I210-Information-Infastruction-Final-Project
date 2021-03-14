@@ -1,0 +1,965 @@
+/*  This part of code formats body and the * does everything*/
+body {
+    background-size: 600px;
+    background-color: #DFDFE1;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*  this code makes it so that the footer is always at bottom of page*/
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#footer {
+    background-color: #2c2a29;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Footer height */
+}
+
+/* css for the background white that will streach across the size of the screen in case thier is not enough content to fill the page*/
+.Background_color {
+    display: block;
+    position: absolute;
+    width: 1100px;
+    height: 100vh;
+    background-color: white;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* css for everything in the header */
+.header {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #2c2a29;
+    position: relative;
+}
+
+.inner-header {
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.logo h1 span {
+    font-weight: 800;
+    color: #52b8e3;
+}
+
+.logo_image {
+    position: relative;
+    top: 50%;
+    transform: translateY(30%);
+    height: 50px;
+    width: 50px;
+}
+
+/* navigation in the header css */
+
+.navigation {
+    float: right;
+    height: 100%;
+}
+
+.navigation a {
+    height: 100%;
+    float: left;
+    padding: 0px 20px;
+    transition: background-color 0.8s ease, height .5s ease;
+}
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.navigation a:hover {
+    background-color: #52b8e3;
+    cursor: pointer;
+    height: 120%;
+}
+
+/* Css to format the footer*/
+.footer {
+    width: 100%;
+    height: 60px;
+    display: block;
+    background-color: #2c2a29;
+    position: absolute;
+    bottom: 0;
+}
+
+.inner-footer {
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#Social_Media {
+    height: 100%;
+    display: table;
+    float: left;
+    width: 25%;
+}
+
+.Socials i {
+    font-size: 40px;
+    padding: 10px;
+    margin: auto;
+    color: white;
+}
+
+.Socials i:hover {
+    cursor: pointer;
+}
+
+.copyright {
+    height: 100%;
+    display: table;
+    float: right;
+}
+
+.copyright h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+/* Css for the index page */
+/* That keeps actual content in line is supose to overlay the background white*/
+#content {
+    width: 1100px;
+    height: 82%;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    padding-top: 20px;
+
+}
+
+/* The main page is split into 2 halves top and bottom with top being logo and title while bottom having the page description */
+#Top_part {
+    background-color: white;
+    color: black;
+    height: 40%;
+    position: relative;
+    margin-top: 20px;
+}
+
+#Top_part h1 {
+    padding-top: 17%;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Top_part h1 span {
+    color: #52b8e3;
+}
+
+#Top_part img {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 175px;
+}
+
+.hr_style {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    width: 75%;
+    margin: auto;
+    position: relative;
+}
+
+.inside_content {
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    overflow: auto;
+    position: relative;
+    background-color: white;
+}
+
+/* left section of the bottom conntent that has summary */
+
+#left {
+    width: 375px;
+    float: left; /* add this */
+    position: relative;
+}
+
+#left p {
+    text-indent: 15%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+#left h3 {
+    padding-bottom: 5%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+#right {
+    width: 600px;
+    display: block;
+    float: right;
+    position: relative;
+}
+
+#right h3 {
+    padding-bottom: 5%;
+}
+
+/* Sideshow container - Source code from w3school */
+.slideshow-container {
+    max-width: 500px;
+    max-height: 300px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: #2c2a29;
+    opacity: 25%;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: #2c2a29;
+    opacity: 75%;
+}
+
+/* Caption text */
+.text {
+    color: white;
+    font-size: 15px;
+    padding: 2% 4%;
+    position: absolute;
+    bottom: 0px;
+    width: 92%;
+    text-align: center;
+    background-color: #2c2a29;
+    opacity: 75%;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    background-color: #2c2a29;
+    opacity: 25%;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+#right h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.slideshow-container pre {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* This is the information page title css*/
+.Top {
+    height: 125px;
+}
+
+.Look_at_art {
+    float: left;
+    width: 65%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.Look_at_art h2 {
+    padding-top: 50px;
+}
+
+/*css for search box with the search input*/
+.Find_art {
+    margin: auto;
+    text-align: center;
+    width: 30%;
+    background-color: #3c89c6;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    padding-left: 5px;
+    padding-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.Find_art form {
+    padding-top: 10px;
+
+}
+
+/* css for the art to display in the gallery page */
+.Art_Gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.Art_Gallery img {
+    width: 300px;
+    height: 200px;
+    background-color: black;
+    object-fit: contain;
+}
+
+.holder {
+    display: block;
+    width: 300px;
+    margin: auto;
+    padding: 15px;
+    position: relative;
+}
+
+.overlay-info {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    bottom: 19px;
+    width: 300px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: #2c2a29;
+    opacity: 75%;
+    transition: opacity 0.8s ease, padding-top .5s ease, padding-bottom .5s ease;
+}
+
+.overlay-info a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    width: 100%;
+}
+
+.overlay-info:hover {
+    opacity: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Gallery_price {
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 15px;
+    background-color: #2c2a29;
+    opacity: 75%;
+    transition: opacity 0.8s ease, padding .5s ease;
+}
+
+.Add2cart img {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    transition: width 0.8s ease, height 0.8s ease, border-radius .8s ease;
+}
+
+.Add2cart {
+    right: 15px;
+    position: absolute;
+    top: 15px;
+    opacity: 75%;
+    border-radius: 0px 0 0px 0px;
+    transition: opacity 0.8s ease;
+}
+
+.Add2cart:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.Add2cart:hover img {
+    width: 45px;
+    height: 45px;
+    border-radius: 0px 0 0px 5px;
+}
+
+.overlay-info:hover ~ .Gallery_price {
+    opacity: 100%;
+    padding: 13px 17px;
+}
+
+.empty_holder {
+
+}
+
+/* css for the details page*/
+.artdetails {
+    display: flex;
+    margin-top: 48px;
+}
+
+.artdetails img {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+.artdetails .cover {
+    width: 50%;
+    display: flex;
+}
+
+.artdetails .label div {
+    width: 110px;
+    padding-right: 10px;
+    font-weight: 600;
+    height: 32px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+}
+
+.artdetails .content div {
+    min-height: 32px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#content2 {
+    margin: auto;
+    width: 45%;
+    background-color: #3c89c6;
+    position: absolute;
+    top: 129px;
+    right: 0;
+    padding-left: 15px;
+    padding-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    display: flex;
+}
+
+.Information_header {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#hr_style2 {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    width: 50%;
+}
+
+/* css for the search input */
+.Find_art input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.Find_art input[type=submit] {
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+    transition: background-color 0.8s ease;
+}
+
+.Find_art input[type=submit]:hover {
+    background-color: #808080;
+}
+
+/* css for div that holds cart and buttons to edit and delete art from database*/
+#Under_Info2 {
+    width: 50%;
+    margin-top: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+#Under_Info {
+    position: relative;
+    margin-top: 200px;
+    width: 50%;
+}
+
+#Under_Info h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.add_to_cart img {
+    transition: background-color 1s ease;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.add_to_cart img:hover {
+    background-color: #cccccc;
+}
+
+/* this part of the css formats the update and delete buttons*/
+.Delete_update {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    padding-top: 20px;
+    height: 50px;
+}
+
+.Delete_update form {
+    margin: auto;
+}
+
+.Delete_update input {
+    margin: auto;
+    border: none;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    border-radius: 0px;
+    transition: background-color 1s ease, padding 1s ease, border-radius 1s ease;
+}
+
+.Delete_update input:hover {
+    background-color: #3c89c6;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.Delete_update button {
+    margin: auto;
+    border: none;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    border-radius: 0px;
+    transition: background-color 1s ease, padding 1s ease, border-radius 1s ease;
+}
+
+.Delete_update button:hover {
+    background-color: #3c89c6;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/*css for chopping cart*/
+#ShoppingCart {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.ShoppingCart_empty {
+    margin: auto;
+    width: 75%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* css for submission page*/
+.submission_page {
+    position: relative;
+}
+
+/* css for check out page and any errors*/
+.Thank_you {
+    margin: auto;
+    width: 75%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.Thank_you2 {
+    margin: auto;
+    width: 75%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.Thank_you2 p {
+    margin: auto;
+    width: 75%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* css
+ for showing art cart page */
+.ShoppingCartTitle {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.artlist {
+    display: flex;
+    flex-direction: column;
+}
+
+.artlist div {
+    padding: 3px 5px;
+}
+
+.artlist .rowSAC {
+    display: flex;
+}
+
+.artlist .rowSAC:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.artlist .headerSAC {
+    background-color: #a1ccda;
+    font-weight: 600;
+}
+
+.artlist .col1SAC {
+    width: 300px;
+}
+
+.artlist .col2SAC {
+    width: 200px;
+}
+
+.artlist .col3SAC {
+    width: 200px;
+}
+
+.artlist .col4SAC {
+    width: 100px;
+}
+
+.artlist .col5SAC {
+    width: 150px;
+    display: flex;
+}
+
+/* css for last row on cart*/
+.artlist .rowSACLast {
+    display: flex;
+}
+
+.artlist .col1SACLast {
+    width: 300px;
+}
+
+.artlist .col2SACLast {
+    width: 300px;
+}
+
+.artlist .col5SACLast {
+    width: 100px;
+}
+
+.artlist .col3SACLast {
+    width: 200px;
+    border-top: 2px solid white;
+}
+
+.artlist .col3SACLast p {
+    text-align: right;
+}
+
+.artlist .col4SACLast {
+    border-top: 2px solid black;
+    width: 100px;
+}
+
+.Artstore-button {
+    display: flex;
+    width: 25%;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: auto;
+    height: 50px;
+}
+
+.Artstore-button input {
+    margin: auto;
+    border: none;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    border-radius: 0px;
+    transition: background-color 1s ease, padding 1s ease, border-radius 1s ease;
+}
+
+.Artstore-button input:hover {
+    background-color: #3c89c6;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.hr4ShoppingCart {
+    width: 25%;
+    margin: auto;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* css for updating the arts information page */
+#Under_Info3 {
+    position: relative;
+    margin-top: 300px;
+    width: 50%;
+
+}
+
+.content input {
+    border: none;
+    padding: 5px;
+}
+
+.content textarea {
+    padding: 5px;
+    border: none;
+}
+
+/* Css for submission page*/
+.bookstore-button {
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+
+.mar {
+    margin: auto;
+}
+
+.bookstore-button input {
+    border: none;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    border-radius: 0px;
+    transition: background-color 1s ease, padding 1s ease, border-radius 1s ease;
+}
+
+.bookstore-button input:hover {
+    background-color: #3c89c6;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.SubmissionTitle {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.SubTitle {
+    width: 35%;
+    margin: auto;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.TableInfo {
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    width: 65%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #3c89c6;
+    border-radius: 10px;
+    padding: 20px;
+    border-spacing: 15px;
+}
+
+.spaceing {
+    padding: 5px;
+}
+
+.spaceing input {
+    padding: 5px;
+}
+
+.spaceing textarea {
+    padding: 5px;
+}
+
+.cat {
+    text-align: right;
+    font-weight: 600;
+}
+
+textarea {
+    resize: none;
+}
+
+.login {
+    width: 50%;
+    float: left;
+    height: 225px;
+}
+
+.registration {
+    width: 50%;
+    float: right;
+    height: 225px;
+}
+
+.registration form {
+    height: 225px;
+}
+
+.Table1 {
+    margin: auto;
+    background-color: #3c89c6;
+    padding: 25px;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.Table2 {
+    margin: auto;
+    background-color: #3c89c6;
+    padding: 25px;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+/* css for login/ registration page*/
+.Basic input {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 1s ease, padding 1s ease, border-radius 1s ease;
+}
+
+.Basic input:hover {
+    background-color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.press:hover {
+    background-color: #3c89c6;
+    cursor: pointer;
+}
+
