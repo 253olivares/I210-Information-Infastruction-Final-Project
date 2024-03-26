@@ -5,9 +5,10 @@
  * File: database.php
  * Description:
  */
+
 $host = 'localhost';
-$login = 'phpuser';
-$password = 'phpuser';
+$login = 'root';
+$password = '';
 $database = 'final_db';
 
 //connection to the mysql server
